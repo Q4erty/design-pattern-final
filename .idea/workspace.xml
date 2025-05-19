@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c755498-4f9a-462f-8001-aa884b037809" name="Changes" comment="" />
+    <list default="true" id="0c755498-4f9a-462f-8001-aa884b037809" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/AddTransactionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/AddTransactionCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/CommandMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CommandMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ShowTransactionsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowTransactionsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composiite/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/composiite/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composiite/CategoryComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/composiite/CategoryComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composiite/SubCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/composiite/SubCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/ExpenseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/ExpenseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/IncomeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/IncomeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/TransactionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/TransactionCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/TransactionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/TransactionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/BudgetAlertObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/BudgetAlertObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/TransactionNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/TransactionNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/CategoryExpenseStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/CategoryExpenseStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/TotalBalanceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/TotalBalanceStrategy.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +39,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Q4erty&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Q4erty/design-pattern-final.git&quot;,
+    &quot;accountId&quot;: &quot;cb8cc1d5-9236-490e-8856-749aee2bfc18&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -25,17 +62,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/untitled",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/IdeaProjects/untitled&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="factory" />
@@ -60,6 +99,9 @@
       <workItem from="1747570411963" duration="4466000" />
       <workItem from="1747575078217" duration="444000" />
       <workItem from="1747594184318" duration="2256000" />
+      <workItem from="1747644947335" duration="5087000" />
+      <workItem from="1747661666721" duration="2886000" />
+      <workItem from="1747672290545" duration="1413000" />
     </task>
     <servers />
   </component>

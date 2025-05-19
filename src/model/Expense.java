@@ -1,35 +1,8 @@
 package model;
 
-public class Expense implements Transaction {
-    private String category;
-    private double amount;
-    private String date;
+import composiite.CategoryComponent;
 
-    public Expense(String category, double amount, String date) {
-        this.category = category;
-        this.amount = amount;
-        this.date = date;
-    }
-
-    @Override
-    public String getCategory() {
-        return category;
-    }
-
-    @Override
-    public double getAmount() {
-        return amount;
-    }
-
-    @Override
-    public String getDate() {
-        return date;
-    }
-
-    @Override
-    public void printDetails() {
-        System.out.println("[Expense] " + date + " | " + category + " | -" + amount);
-    }
+public record Expense(CategoryComponent category, double amount, String date) implements Transaction {
 
     @Override
     public boolean isIncome() {
@@ -38,6 +11,12 @@ public class Expense implements Transaction {
 
     @Override
     public String toString() {
-        return "[Expense] Category: " + category + ", Amount: " + amount + ", Date: " + date;
+        return String.format("[Expense] Category: %s, Amount: %.2f, Date: %s",
+                category.getFullPath(), amount, date);
+    }
+
+    @Override
+    public String getCategoryPath() {
+        return category().getFullPath();
     }
 }

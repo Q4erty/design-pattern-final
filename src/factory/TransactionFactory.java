@@ -1,8 +1,9 @@
 package factory;
 
+import composiite.CategoryComponent;
 import model.Transaction;
 
 public interface TransactionFactory {
-    Transaction createTransaction(String category, double amount, String date);
+    Transaction createTransaction(CategoryComponent category, double amount, String date);
 }
 

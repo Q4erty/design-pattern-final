@@ -3,7 +3,7 @@ package command;
 import model.Transaction;
 
 public class ShowTransactionsCommand implements Command {
-    private TransactionRepository repository;
+    private final TransactionRepository repository;
 
     public ShowTransactionsCommand(TransactionRepository repository) {
         this.repository = repository;

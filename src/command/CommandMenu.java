@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CommandMenu {
-    private List<Command> commands = new ArrayList<>();
+    private final List<Command> commands = new ArrayList<>();
 
     public void addCommand(Command command) {
         commands.add(command);

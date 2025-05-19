@@ -1,9 +1,10 @@
 package model;
 
+import composiite.CategoryComponent;
+
 public interface Transaction {
-    String getCategory();
-    double getAmount();
-    String getDate();
-    void printDetails();
+    CategoryComponent category();
+    double amount();
     boolean isIncome();
+    String getCategoryPath();
 }

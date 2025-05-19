@@ -1,18 +1,23 @@
 package command;
 
+import composiite.Category;
+import composiite.CategoryComponent;
 import factory.TransactionCreator;
 import model.Transaction;
 import observer.TransactionNotifier;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class AddTransactionCommand implements Command {
-    private TransactionRepository repository;
-    private TransactionNotifier notifier;
+    private final TransactionRepository repository;
+    private final TransactionNotifier notifier;
+    private final CategoryComponent categoryRoot;
 
-    public AddTransactionCommand(TransactionRepository repository, TransactionNotifier notifier) {
+    public AddTransactionCommand(TransactionRepository repository, TransactionNotifier notifier, CategoryComponent categoryRoot) {
         this.repository = repository;
         this.notifier = notifier;
+        this.categoryRoot = categoryRoot;
     }
 
     @Override
@@ -23,7 +28,7 @@ public class AddTransactionCommand implements Command {
         String type = scanner.nextLine().trim().toLowerCase();
 
         System.out.print("Enter a category: ");
-        String category = scanner.nextLine();
+        CategoryComponent category = selectCategory(scanner);
 
         System.out.print("Enter the amount: ");
         double amount = scanner.nextDouble();
@@ -41,7 +46,33 @@ public class AddTransactionCommand implements Command {
             System.out.println("❌ Error: " + e.getMessage());
         }
     }
+    private CategoryComponent selectCategory(Scanner scanner) {
+        return selectCategoryRecursive(scanner, categoryRoot, "");
+    }
 
+    private CategoryComponent selectCategoryRecursive(Scanner scanner,
+                                                      CategoryComponent current,
+                                                      String prefix) {
+        System.out.println(prefix + current.getName());
+        if (current instanceof Category) {
+            List<CategoryComponent> children = ((Category) current).getChildren();
+            for (int i = 0; i < children.size(); i++) {
+                System.out.printf("%s%d. %s%n", prefix + "  ", i + 1, children.get(i).getName());
+            }
+            System.out.print(prefix + "Select category (0 for current): ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            if (choice > 0 && choice <= children.size()) {
+                return selectCategoryRecursive(
+                        scanner,
+                        children.get(choice - 1),
+                        prefix + "  "
+                );
+            }
+        }
+        return current;
+    }
     @Override
     public String getName() {
         return "Add transaction";

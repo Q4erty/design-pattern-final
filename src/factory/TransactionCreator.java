@@ -1,9 +1,10 @@
 package factory;
 
+import composiite.CategoryComponent;
 import model.Transaction;
 
 public class TransactionCreator {
-    public static Transaction create(String type, String category, double amount, String date) {
+    public static Transaction create(String type, CategoryComponent category, double amount, String date) {
         TransactionFactory factory = switch (type.toLowerCase()) {
             case "income" -> new IncomeFactory();
             case "expense" -> new ExpenseFactory();

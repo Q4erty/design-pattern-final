@@ -13,10 +13,9 @@ public class CategoryExpenseStrategy implements AnalysisStrategy {
 
         for (Transaction t : transactions) {
             if (!t.isIncome()) {
-                categoryTotals.put(
-                        t.getCategory(),
-                        categoryTotals.getOrDefault(t.getCategory(), 0.0) + t.getAmount()
-                );
+                String path = t.getCategoryPath();
+                categoryTotals.put(path,
+                        categoryTotals.getOrDefault(path, 0.0) + t.amount());
             }
         }
 
