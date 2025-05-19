@@ -1,6 +1,6 @@
 package factory;
 
-import composiite.CategoryComponent;
+import composite.CategoryComponent;
 import model.Transaction;
 
 public interface TransactionFactory {

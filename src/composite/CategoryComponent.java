@@ -1,4 +1,4 @@
-package composiite;
+package composite;
 
 public interface CategoryComponent {
     String getName();

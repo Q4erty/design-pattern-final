@@ -1,7 +1,7 @@
 package command;
 
-import composiite.Category;
-import composiite.CategoryComponent;
+import composite.Category;
+import composite.CategoryComponent;
 
 import java.util.List;
 import java.util.Scanner;

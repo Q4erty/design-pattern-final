@@ -1,6 +1,6 @@
 package model;
 
-import composiite.CategoryComponent;
+import composite.CategoryComponent;
 
 public interface Transaction {
     CategoryComponent category();

@@ -1,7 +1,7 @@
 package command;
 
-import composiite.Category;
-import composiite.CategoryComponent;
+import composite.Category;
+import composite.CategoryComponent;
 import factory.TransactionCreator;
 import model.Transaction;
 import observer.TransactionNotifier;

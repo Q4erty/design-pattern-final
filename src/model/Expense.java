@@ -1,6 +1,6 @@
 package model;
 
-import composiite.CategoryComponent;
+import composite.CategoryComponent;
 
 public record Expense(CategoryComponent category, double amount, String date) implements Transaction {
 

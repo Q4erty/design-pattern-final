@@ -1,4 +1,4 @@
-package composiite;
+package composite;
 
 public class SubCategory implements CategoryComponent {
     private final String name;
